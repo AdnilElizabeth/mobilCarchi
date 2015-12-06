@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Carchi Turístico</title>
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+
+        <!-- Bootstrap Core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/jquery.mobile-1.4.5.css" rel="stylesheet">
+        
+        <!-- Custom CSS -->
+        <link href="css/animate.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+        <!-- Custom Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+
+        <!-- Template js -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/contact_me.js"></script>
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    
+<body>
+        
+        <!-- Start Logo Section -->
+
+<div data-role="page" id="pgInicio">
+
+<!-- PANEL MENU -->
+            <div data-role="panel" data-display="overlay" id="pnlMenu" data-theme="b" data-position-fixed="true">
+                <h2>Men&uacute; Principal</h2>
+                <br>
+                    <ul data-role="listview">
+                      
+                      
+                      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+                        <h2>Buscar</h2>
+                        <ul data-role="listview" data-theme="b">
+                          <li><a href="alojamiento.html">Alojamiento</a></li>
+                          <li><a href="comidas.html">Comidas & Bebidas</a></li>
+                          <li><a href="atractivos.html">Atractivos Turísticos</a></li>
+
+                        </ul>
+                      </li>
+                      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+                        <h2>Cantones</h2>
+                        <ul data-role="listview" data-theme="b">
+                          <li><a href="#modal-bolivar"  data-toggle="modal" id="btn_modal_bolivar0">Bolivar</a></li>
+                          <li><a href="#modal-espejo"  data-toggle="modal" id="btn_modal_espejo0">Espejo</a></li>
+                          <li><a href="#modal-mira"  data-toggle="modal" id="btn_modal_mira0">Mira</a></li>
+                          <li><a href="#modal-montufar"  data-toggle="modal" id="btn_modal_montufar0">Montúfar</a></li>
+                          <li><a href="#modal-huaca"  data-toggle="modal" id="btn_modal_huaca0">Huaca</a></li>
+                          <li><a href="#modal-tulcan"  data-toggle="modal" id="btn_modal_tulcan0">Tulcán</a></li>
+
+                        </ul>
+                      </li>
+                     </ul>
+                    
+                   
+             </div>
+
+        <section id="logo-section" class="text-center">
+ 
+
+              <!-- ENCABEZADO -->
+              <div data-role="header" data-position="fixed" data-theme="b">
+                <h1>Carchi Tur&iacute;stico</h1>
+
+                <a href="#pnlMenu" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+               
+
+              </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="logo text-right">
+                            <h1><strong>Carchi</strong></h1>
+                            <span>Provincia de hermosos paisajes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Logo Section -->
+        
+        
+        <!-- Start Main Body Section -->
+        <div class="mainbody-section text-center">
+            <div class="container">
+                <div class="row">                    
+                    <div class="col-md-3">
+                        
+                        <div class="menu-item blue">
+                            <a href="#modal-bolivar" data-toggle="modal" id="btn_modal_bolivar">
+                                <i class="fa fa-globe"></i>
+                                <p>Cantón Bolívar</p>
+                            </a>
+                        </div>
+                        
+                        <div class="menu-item green">
+                            <a href="#modal-espejo" data-toggle="modal" id="btn_modal_espejo">
+                                <i class="fa fa-file-photo-o"></i>
+                                <p>Cantón Espejo</p>
+                            </a>
+                        </div>
+                        
+                        <div class="menu-item light-red">
+                            <a href="#modal-mira" data-toggle="modal" id="btn_modal_mira">
+                                <i class="fa fa-camera-retro"></i>
+                                <p>Cantón Mira</p>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-md-6">
+                        
+                        <!-- Start Carousel Section -->
+                        <div class="home-slider">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="padding-bottom: 30px;">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                	<div class="item">
+                                        <img src="images/about-04.jpg" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="item active">
+                                        <img src="images/about-03.jpg" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/about-02.jpg" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/about-01.jpg" class="img-responsive" alt="">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Start Carousel Section -->
+            
+                        
+                    </div>
+                    
+                    <div class="col-md-3">
+                        
+                        <div class="menu-item light-red">
+                            <a href="#modal-montufar" data-toggle="modal" id="btn_modal_montufar">
+                                <i class="fa fa-camera"></i>
+                                <p>Cantón Montúfar</p>
+                            </a>
+                        </div>
+                        
+                        <div class="menu-item color">
+                            <a href="#modal-huaca" data-toggle="modal" id="btn_modal_huaca">
+                                <i class="fa fa-photo"></i>
+                                <p>Cantón Huaca</p>
+                            </a>
+                        </div>
+                        
+                        <div class="menu-item blue">
+                            <a href="#modal-tulcan" data-toggle="modal" id="btn_modal_tulcan">
+                                <i class="fa fa-map-marker"></i>
+                                <p>Cantón Tulcán</p>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Body Section -->
+        
+        <!-- Start Copyright Section -->
+        <div class="copyright text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                       <span class="bigger-120">
+							<span class="">http://www.carchi.gob.ec/</span>
+							 &copy; 2014-2015
+						</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Copyright Section -->
+        
+        
+        <!-- Start Feature Section -->
+        <div class="section-modal modal fade" id="modal-bolivar" tabindex="-1" role="dialog" aria-hidden="true">
+             <div data-role="panel" data-display="overlay" id="pnlMenuBolivar" data-theme="b">
+                <h2>Men&uacute; Principal</h2>
+                <br>
+                    <ul data-role="listview">
+                   
+                      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+                        <h2>Cantones</h2>
+                        <ul data-role="listview" data-theme="b">
+                          <li><a href="#modal-bolivar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_bolivar1">Bolivar</a></li>
+                          <li><a href="#modal-espejo"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_espejo1">Espejo</a></li>
+                          <li><a href="#modal-mira"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_mira1">Mira</a></li>
+                          <li><a href="#modal-montufar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_montufar1">Montúfar</a></li>
+                          <li><a href="#modal-huaca"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_huaca1">Huaca</a></li>
+                          <li><a href="#modal-tulcan"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_tulcan1">Tulcán</a></li>
+
+                        </ul>
+                      </li>
+                     </ul>
+                    
+                   
+             </div>
+
+
+                    <div data-role="header" data-position="fixed" data-theme="b">
+                        <h1>Carchi Tur&iacute;stico</h1>
+
+                        <a href="#pnlMenuBolivar" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+                        <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+                      </div>
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                        <br>
+                            <h3>Cantón Bolívar</h3>
+                            <p>Un cantón que te hará revivir tiempos prehistóricos</p>
+                            <center><img src="images/bolivar.jpg" class="img-responsive" width="450px"></center>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                                <div class="" id="btn_alojamiento1">
+                                    <i class="fa fa-home"></i>
+                                    <div class="feature-content">
+                                        <h4>Alojamiento</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                            <div class="" id="btn_comidas1">
+                                    <i class="fa fa-cutlery"></i>
+                                    <div class="feature-content">
+                                        <h4>Comidas & Bebidas</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                            <div class="" id="btn_atractivos1">
+                                <i class="fa fa-picture-o"></i>
+                                <div class="feature-content">
+                                    <h4>Atractivos Turísticos</h4>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                    </div><!-- /.row -->
+                </div>
+                        <!-- Start Copyright Section -->
+                <div class="copyright text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                               <span class="bigger-120">
+                                    <span class="">http://www.carchi.gob.ec/</span>
+                                     &copy; 2014-2015
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <!-- End Feature Section -->
+        
+        
+        
+        <!-- Start Portfolio Section -->
+        <div class="section-modal modal fade" id="modal-espejo" tabindex="-1" role="dialog" aria-hidden="true">
+             <div data-role="panel" data-display="overlay" id="pnlMenuEspejo" data-theme="b">
+                <h2>Men&uacute; Principal</h2>
+                <br>
+                    <ul data-role="listview">
+                      
+                      
+                      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+                        <h2>Cantones</h2>
+                        <ul data-role="listview" data-theme="b">
+                          <li><a href="#modal-bolivar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_bolivar2">Bolivar</a></li>
+                          <li><a href="#modal-espejo"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_espejo2">Espejo</a></li>
+                          <li><a href="#modal-mira"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_mira2">Mira</a></li>
+                          <li><a href="#modal-montufar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_montufar2">Montúfar</a></li>
+                          <li><a href="#modal-huaca"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_huaca2">Huaca</a></li>
+                          <li><a href="#modal-tulcan"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_tulcan2">Tulcán</a></li>
+
+                        </ul>
+                      </li>
+                     </ul>
+                    
+                   
+             </div>
+
+                    <div data-role="header" data-position="fixed" data-theme="b">
+                        <h1>Carchi Tur&iacute;stico</h1>
+
+                        <a href="#pnlMenuEspejo" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+                        <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+                    </div>
+            <div class="modal-content">
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                        <br>
+                            <h3>Cantón Espejo</h3>
+                            <p>Un cantón que te hará revivir tiempos prehistóricos</p>
+                            <center><img src="images/espejo.jpg" class="img-responsive" width="450px"></center>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                                <div class="" id="btn_alojamiento2">
+                                    <i class="fa fa-home"></i>
+                                    <div class="feature-content">
+                                        <h4>Alojamiento</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                            <div class="" id="btn_comidas2">
+                                    <i class="fa fa-cutlery"></i>
+                                    <div class="feature-content">
+                                        <h4>Comidas & Bebidas</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                            <div class="" id="btn_atractivos2">
+                                <i class="fa fa-picture-o"></i>
+                                <div class="feature-content">
+                                    <h4>Atractivos Turísticos</h4>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                    </div><!-- /.row -->
+                </div>
+                        <!-- Start Copyright Section -->
+                <div class="copyright text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                               <span class="bigger-120">
+                                    <span class="">http://www.carchi.gob.ec/</span>
+                                     &copy; 2014-2015
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Portfolio Section -->
+        
+        
+        <!-- Start About Us Section -->
+     <div class="section-modal modal fade" id="modal-mira" tabindex="-1" role="dialog" aria-hidden="true">
+             <div data-role="panel" data-display="overlay" id="pnlMenuMira" data-theme="b">
+                <h2>Men&uacute; Principal</h2>
+                <br>
+                    <ul data-role="listview">
+                      
+                      
+                      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+                        <h2>Cantones</h2>
+                        <ul data-role="listview" data-theme="b">
+                          <li><a href="#modal-bolivar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_bolivar3">Bolivar</a></li>
+                          <li><a href="#modal-espejo"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_espejo3">Espejo</a></li>
+                          <li><a href="#modal-mira"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_mira3">Mira</a></li>
+                          <li><a href="#modal-montufar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_montufar3">Montúfar</a></li>
+                          <li><a href="#modal-huaca"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_huaca3">Huaca</a></li>
+                          <li><a href="#modal-tulcan"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_tulcan3">Tulcán</a></li>
+
+                        </ul>
+                      </li>
+                     </ul>
+                    
+                   
+             </div>
+
+                    <div data-role="header" data-position="fixed" data-theme="b">
+                        <h1>Carchi Tur&iacute;stico</h1>
+
+                        <a href="#pnlMenuMira" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+                        <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+                    </div>
+
+            <div class="modal-content">
+              
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                        <br>
+                            <h3>Cantón Mira</h3>
+                            <p>Un cantón que te hará revivir tiempos prehistóricos</p>
+                            <center><img src="images/mira.jpg" class="img-responsive" width="450px"></center>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                                <div class="" id="btn_alojamiento3">
+                                    <i class="fa fa-home"></i>
+                                    <div class="feature-content">
+                                        <h4>Alojamiento</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                            <div class="" id="btn_comidas3">
+                                    <i class="fa fa-cutlery"></i>
+                                    <div class="feature-content">
+                                        <h4>Comidas & Bebidas</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                            <div class="" id="btn_atractivos3">
+                                <i class="fa fa-picture-o"></i>
+                                <div class="feature-content">
+                                    <h4>Atractivos Turísticos</h4>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                    </div><!-- /.row -->
+                </div>
+                        <!-- Start Copyright Section -->
+                <div class="copyright text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                               <span class="bigger-120">
+                                    <span class="">http://www.carchi.gob.ec/</span>
+                                     &copy; 2014-2015
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About Us Section -->
+        
+
+        
+        <!-- Start Latest News Section -->
+        <div class="section-modal modal fade" id="modal-tulcan" tabindex="-1" role="dialog" aria-hidden="true">
+             <div data-role="panel" data-display="overlay" id="pnlMenuTulcan" data-theme="b">
+                <h2>Men&uacute; Principal</h2>
+                <br>
+                    <ul data-role="listview">
+                      
+                    
+                      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+                        <h2>Cantones</h2>
+                        <ul data-role="listview" data-theme="b">
+                          <li><a href="#modal-bolivar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_bolivar4">Bolivar</a></li>
+                          <li><a href="#modal-espejo"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_espejo4">Espejo</a></li>
+                          <li><a href="#modal-mira"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_mira4">Mira</a></li>
+                          <li><a href="#modal-montufar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_montufar4">Montúfar</a></li>
+                          <li><a href="#modal-huaca"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_huaca4">Huaca</a></li>
+                          <li><a href="#modal-tulcan"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_tulcan4">Tulcán</a></li>
+
+                        </ul>
+                      </li>
+                     </ul>
+                    
+                   
+             </div>
+
+        <div data-role="header" data-position="fixed" data-theme="b">
+                <h1>Carchi Tur&iacute;stico</h1>
+
+                <a href="#pnlMenuTulcan" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+                <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+              </div>
+
+            <div class="modal-content">
+             
+                   <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                        <br>
+                            <h3>Cantón Tulcán</h3>
+                            <p>Un cantón que te hará revivir tiempos prehistóricos</p>
+                            <center><img src="images/tulcan.jpg" class="img-responsive" width="450px"></center>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                                <div class="" id="btn_alojamiento4">
+                                    <i class="fa fa-home"></i>
+                                    <div class="feature-content">
+                                        <h4>Alojamiento</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                            <div class="" id="btn_comidas4">
+                                    <i class="fa fa-cutlery"></i>
+                                    <div class="feature-content">
+                                        <h4>Comidas & Bebidas</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                            <div class="" id="btn_atractivos4">
+                                <i class="fa fa-picture-o"></i>
+                                <div class="feature-content">
+                                    <h4>Atractivos Turísticos</h4>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                    </div><!-- /.row -->
+                </div>
+                        <!-- Start Copyright Section -->
+                <div class="copyright text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                               <span class="bigger-120">
+                                    <span class="">http://www.carchi.gob.ec/</span>
+                                     &copy; 2014-2015
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Latest News Section -->
+        <!-- Start Contact Section -->
+        <div class="section-modal modal fade" id="modal-montufar" tabindex="-1" role="dialog" aria-hidden="true">
+
+             <div data-role="panel" data-display="overlay" id="pnlMenuMontufar" data-theme="b">
+                <h2>Men&uacute; Principal</h2>
+                <br>
+                    <ul data-role="listview">
+                      
+                      
+                      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+                        <h2>Cantones</h2>
+                        <ul data-role="listview" data-theme="b">
+                          <li><a href="#modal-bolivar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_bolivar5">Bolivar</a></li>
+                          <li><a href="#modal-espejo"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_espejo5">Espejo</a></li>
+                          <li><a href="#modal-mira"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_mira5">Mira</a></li>
+                          <li><a href="#modal-montufar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_montufar5">Montúfar</a></li>
+                          <li><a href="#modal-huaca"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_huaca5">Huaca</a></li>
+                          <li><a href="#modal-tulcan"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_tulcan5">Tulcán</a></li>
+
+                        </ul>
+                      </li>
+                     </ul>
+                    
+                   
+             </div>
+
+                    <div data-role="header" data-position="fixed" data-theme="b">
+                        <h1>Carchi Tur&iacute;stico</h1>
+
+                        <a href="#pnlMenuMontufar" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+                        <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+                    </div>
+            <div class="modal-content">
+               
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                        <br>
+                            <h3>Cantón Montufar</h3>
+                            <p>Un cantón que te hará revivir tiempos prehistóricos</p>
+                            <center><img src="images/montufar.jpg" class="img-responsive" width="450px"></center>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                                <div class="" id="btn_alojamiento5">
+                                    <i class="fa fa-home"></i>
+                                    <div class="feature-content">
+                                        <h4>Alojamiento</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                            <div class="" id="btn_comidas5">
+                                    <i class="fa fa-cutlery"></i>
+                                    <div class="feature-content">
+                                        <h4>Comidas & Bebidas</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                            <div class="" id="btn_atractivos5">
+                                <i class="fa fa-picture-o"></i>
+                                <div class="feature-content">
+                                    <h4>Atractivos Turísticos</h4>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                    </div><!-- /.row -->
+                </div>
+                        <!-- Start Copyright Section -->
+                <div class="copyright text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                               <span class="bigger-120">
+                                    <span class="">http://www.carchi.gob.ec/</span>
+                                     &copy; 2014-2015
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact Section -->
+        
+        
+         <!-- Start Testimonial Section -->
+        <div class="section-modal modal fade" id="modal-huaca" tabindex="-1" role="dialog" aria-hidden="true">
+         <div data-role="panel" data-display="overlay" id="pnlMenuHuaca" data-theme="b">
+                <h2>Men&uacute; Principal</h2>
+                <br>
+                    <ul data-role="listview">
+                      
+                     
+                      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+                        <h2>Cantones</h2>
+                        <ul data-role="listview" data-theme="b">
+                          <li><a href="#modal-bolivar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_bolivar6">Bolivar</a></li>
+                          <li><a href="#modal-espejo"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_espejo6">Espejo</a></li>
+                          <li><a href="#modal-mira"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_mira6">Mira</a></li>
+                          <li><a href="#modal-montufar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_montufar6">Montúfar</a></li>
+                          <li><a href="#modal-huaca"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_huaca6">Huaca</a></li>
+                          <li><a href="#modal-tulcan"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_tulcan6">Tulcán</a></li>
+
+                        </ul>
+                      </li>
+                     </ul>
+                    
+                   
+             </div>
+
+                    <div data-role="header" data-position="fixed" data-theme="b">
+                        <h1>Carchi Tur&iacute;stico</h1>
+
+                        <a href="#pnlMenuHuaca" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+                        <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+                    </div>
+            <div class="modal-content">
+               
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                        <br>
+                            <h3>Cantón Huaca</h3>
+                            <p>Un cantón que te hará revivir tiempos prehistóricos</p>
+                            <center><img src="images/huaca.jpg" class="img-responsive" width="450px"></center>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                                <div class="" id="btn_alojamiento6">
+                                    <i class="fa fa-home"></i>
+                                    <div class="feature-content">
+                                        <h4>Alojamiento</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                            <div class="" id="btn_comidas6">
+                                    <i class="fa fa-cutlery"></i>
+                                    <div class="feature-content">
+                                        <h4>Comidas & Bebidas</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="feature">
+                            <div class="" id="btn_atractivos6">
+                                <i class="fa fa-picture-o"></i>
+                                <div class="feature-content">
+                                    <h4>Atractivos Turísticos</h4>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                    </div><!-- /.row -->
+                </div>
+                        <!-- Start Copyright Section -->
+                <div class="copyright text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                               <span class="bigger-120">
+                                    <span class="">http://www.carchi.gob.ec/</span>
+                                     &copy; 2014-2015
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Testimonial Section -->
+
+        <div class="section-modal modal fade" id="modal-alojamiento" tabindex="-1" role="dialog" aria-hidden="true">
+         <div data-role="panel" data-display="overlay" id="pnlMenuAlojamiento" data-theme="b">
+                <h2>Men&uacute; Principal</h2>
+                <br>
+                    <ul data-role="listview">
+                      
+                      
+                      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+                        <h2>Cantones</h2>
+                        <ul data-role="listview" data-theme="b">
+                          <li><a href="#modal-bolivar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_bolivar7">Bolivar</a></li>
+                          <li><a href="#modal-espejo"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_espejo7">Espejo</a></li>
+                          <li><a href="#modal-mira"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_mira7">Mira</a></li>
+                          <li><a href="#modal-montufar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_montufar7">Montúfar</a></li>
+                          <li><a href="#modal-huaca"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_huaca7">Huaca</a></li>
+                          <li><a href="#modal-tulcan"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_tulcan7">Tulcán</a></li>
+
+                        </ul>
+                      </li>
+                     </ul>
+                    
+                   
+             </div>
+
+                    <div data-role="header" data-position="fixed" data-theme="b">
+                        <h1>Carchi Tur&iacute;stico</h1>
+
+                        <a href="#pnlMenuAlojamiento" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+                        <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+                    </div>
+            <div class="modal-content">
+              <br> <br>
+                <CENTER><img src="images/alojamiento.png" class="img-responsive" width="350px"></CENTER>
+                <input type="hidden" id="txt_id_cantones"> 
+                <div class="container" id="obj_alojamiento">
+                    
+                </div>
+                        <!-- Start Copyright Section -->
+                <div class="copyright text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                               <span class="bigger-120">
+                                    <span class="">http://www.carchi.gob.ec/</span>
+                                     &copy; 2014-2015
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-modal modal fade" id="modal-comidas" tabindex="-1" role="dialog" aria-hidden="true">
+         <div data-role="panel" data-display="overlay" id="pnlMenuComidas" data-theme="b">
+                <h2>Men&uacute; Principal</h2>
+                <br>
+                    <ul data-role="listview">
+                      
+                      
+                      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+                        <h2>Cantones</h2>
+                        <ul data-role="listview" data-theme="b">
+                          <li><a href="#modal-bolivar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_bolivar8">Bolivar</a></li>
+                          <li><a href="#modal-espejo"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_espejo8">Espejo</a></li>
+                          <li><a href="#modal-mira"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_mira8">Mira</a></li>
+                          <li><a href="#modal-montufar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_montufar8">Montúfar</a></li>
+                          <li><a href="#modal-huaca"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_huaca8">Huaca</a></li>
+                          <li><a href="#modal-tulcan"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_tulcan8">Tulcán</a></li>
+
+                        </ul>
+                      </li>
+                     </ul>
+                    
+                   
+             </div>
+
+                    <div data-role="header" data-position="fixed" data-theme="b">
+                        <h1>Carchi Tur&iacute;stico</h1>
+
+                        <a href="#pnlMenuComidas" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+                        <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+                    </div>
+            <div class="modal-content">
+              <br><br> <br>
+                <CENTER><img src="images/comidas.png" class="img-responsive" width="500px"></CENTER>
+                <input type="hidden" id="txt_id_cantones"> 
+                <div class="container" id="obj_comidas">
+                    
+                </div>
+                        <!-- Start Copyright Section -->
+                <div class="copyright text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                               <span class="bigger-120">
+                                    <span class="">http://www.carchi.gob.ec/</span>
+                                     &copy; 2014-2015
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-modal modal fade" id="modal-atractivos" tabindex="-1" role="dialog" aria-hidden="true">
+             <div data-role="panel" data-display="overlay" id="pnlMenuAtractivos" data-theme="b">
+                <h2>Men&uacute; Principal</h2>
+                <br>
+                    <ul data-role="listview">
+                      
+                      
+                      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+                        <h2>Cantones</h2>
+                        <ul data-role="listview" data-theme="b">
+                          <li><a href="#modal-bolivar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_bolivar9">Bolivar</a></li>
+                          <li><a href="#modal-espejo"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_espejo9">Espejo</a></li>
+                          <li><a href="#modal-mira"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_mira9">Mira</a></li>
+                          <li><a href="#modal-montufar"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_montufar9">Montúfar</a></li>
+                          <li><a href="#modal-huaca"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_huaca9">Huaca</a></li>
+                          <li><a href="#modal-tulcan"  data-toggle="modal" class="close-modal" data-dismiss="modal" id="btn_modal_tulcan9">Tulcán</a></li>
+
+                        </ul>
+                      </li>
+                     </ul>
+                    
+                   
+             </div>
+
+                    <div data-role="header" data-position="fixed" data-theme="b">
+                        <h1>Carchi Tur&iacute;stico</h1>
+
+                        <a href="#pnlMenuAtractivos" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+                        <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+                    </div>
+            <div class="modal-content">
+               <br><br><br>
+                <CENTER><img src="images/atractivos.png" class="img-responsive" width="600px"></CENTER>
+                <input type="hidden" id="txt_id_cantones"> 
+                <div class="container" id="obj_atractivos">
+                    
+                </div>
+                        <!-- Start Copyright Section -->
+                <div class="copyright text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                               <span class="bigger-120">
+                                    <span class="">http://www.carchi.gob.ec/</span>
+                                     &copy; 2014-2015
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal-ver-alojamiento" class="modal fade" tabindex="-1">
+   
+                    <div data-role="header" data-position="fixed" data-theme="b">
+                        <h1>Carchi Tur&iacute;stico</h1>
+
+                        <a id="btn_mapa_ver1" class="ui-btn ui-icon-location ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+                        <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+                    </div>
+
+
+                <div class="modal-dialog">
+            
+                    <div class="modal-content">
+                        <div class="modal-header no-padding">
+                            <div class="table-header">
+                            <br>
+                                Alojamiento
+                            </div>
+                        </div>
+                        <div class="modal-body padding">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h4 class="header orange">Información General</h4>
+                                    <div class="profile-user-info no-padding">
+
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Tipo: </div>                                            
+                                            <div class="profile-info-value">
+                                                <input type="hidden" id="txt_id_alojamiento">
+                                                <span class="editable" id="select_tipo1">Tipo</span>
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Nombre: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_nombre1" >..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Propietario: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_propietario1">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h4 class="header orange">Ubicación</h4>
+                                    <div class="profile-user-info no-padding">
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Canton: </div>
+
+                                            <div class="profile-info-value">                                       
+                                                <span class="editable" id="select_canton1">Cantón</span>
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Parroquia: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="select_parroquia1">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Dirección: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_direccion1">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Longitud: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_longitud1">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Latitud: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_latitud1">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h4 class="header orange">Detalles</h4>
+                                    <div class="profile-user-info no-padding">
+                                        <div class="profile-user-info">
+                                            <div class="profile-info-row">
+                                            <div class="profile-info-name"> Categoría: </div>
+
+                                            <div class="profile-info-value">                                       
+                                                <span class="editable" id="select_categoria1">Categoría</span>
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> N° Hab.: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_habitaciones1">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> N° Plazas: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_plazas1">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Precio: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_precio1">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Teléfono: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_telefono1">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Correo: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_correo1">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Sitio Web: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_web1">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Descripción: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_descripcion1">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h3 class="row header smaller lighter orange">
+                                            <span class="col-sm-8">
+                                                <i class="ace-icon fa fa-camera"></i>
+                                                Fotografías
+                                            </span><!-- /.col -->
+
+                                        </h3>
+
+                                    <div id="obj_img1_aloja"></div>
+                                </div>
+
+                            </div>                          
+                        </div>
+                        
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+        </div>
+
+            <div id="modal-ver-comidas" class="modal fade" tabindex="-1">
+
+                    <div data-role="header" data-position="fixed" data-theme="b">
+                        <h1>Carchi Tur&iacute;stico</h1>
+
+                        <a id="btn_mapa_ver2" class="ui-btn ui-icon-location ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+                        <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+                    </div>
+                <div class="modal-dialog">
+            
+                    <div class="modal-content">
+                        <div class="modal-header no-padding">
+                            <div class="table-header">
+                             <br>
+                                Comidas & Bebidas
+                            </div>
+                        </div>
+                        <div class="modal-body padding">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h4 class="header orange">Información General</h4>
+                                    <div class="profile-user-info no-padding">
+
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Tipo: </div>                                            
+
+                                            <div class="profile-info-value">
+                                                <input type="hidden" id="txt_id_comida">
+                                                <span class="editable" id="select_tipo2">Tipo</span>
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Nombre: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_nombre2" >..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Propietario: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_propietario2">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h4 class="header orange">Ubicación</h4>
+                                    <div class="profile-user-info no-padding">
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Canton: </div>
+
+                                            <div class="profile-info-value">                                        
+                                                <span class="editable" id="select_canton2">Cantón</span>
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Parroquia: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="select_parroquia2">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Dirección: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_direccion2">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Longitud: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_longitud2">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Latitud: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_latitud2">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h4 class="header orange">Detalles</h4>
+                                    <div class="profile-user-info no-padding">
+                                        <div class="profile-user-info">
+                                            <div class="profile-info-row">
+                                            <div class="profile-info-name"> Categoría: </div>
+
+                                            <div class="profile-info-value">                                        
+                                                <span class="editable" id="select_categoria2">Categoría</span>
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> N° Mesas: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_habitaciones2">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> N° Plazas: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_plazas2">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Teléfono: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_telefono2">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Correo: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_correo2">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Sitio Web: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_web2">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name"> Descripción: </div>
+
+                                            <div class="profile-info-value" >
+                                                <span class="editable" id="lbl_descripcion2">..</span>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h3 class="row header smaller lighter orange">
+                                            <span class="col-sm-8">
+                                                <i class="ace-icon fa fa-camera"></i>
+                                                Fotografías
+                                            </span><!-- /.col -->
+
+                                        </h3>
+
+                                    <div id="obj_img1_comidas"></div>
+                                </div>
+
+                            </div>                          
+                        </div>
+                        
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+                <div id="modal-ver-atractivos" class="modal fade" tabindex="-1">
+
+                    <div data-role="header" data-position="fixed" data-theme="b">
+                        <h1>Carchi Tur&iacute;stico</h1>
+
+                        <a id="btn_mapa_ver3" class="ui-btn ui-icon-location ui-btn-icon-left ui-shadow ui-corner-all" > &nbsp; </a>
+                        <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+                    </div>
+                    <div class="modal-dialog">
+              
+                        <div class="modal-content">
+                            <div class="modal-header no-padding">
+                                <div class="table-header">
+                                 <br>
+                                    Atractivo Turístico
+                                </div>
+                            </div>
+                            <div class="modal-body padding">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h4 class="header orange">Información General</h4>
+                                        <div class="profile-user-info no-padding">
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Categoría: </div>
+                                                <div class="profile-info-value">
+                                                    <input type="hidden" id="txt_id_atractivo">
+                                                    <span class="editable" id="select_cat3">Tipo</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Tipo: </div>
+                                                <div class="profile-info-value">
+                                                    <span class="editable" id="select_tipo3">Tipo</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Subtipo: </div>
+                                                <div class="profile-info-value">
+                                                    <span class="editable" id="select_subtipo3">Subipo</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Nombre: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_nombre3" >..</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Propietario: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_propietario3">..</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <h4 class="header orange">Ubicación</h4>
+                                        <div class="profile-user-info no-padding">
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Canton: </div>
+
+                                                <div class="profile-info-value">
+                                                    <span class="editable" id="select_canton3">Cantón</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Parroquia: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="select_parroquia3">..</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Poblado: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_poblado3">..</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Dirección: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_direccion3">..</span>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Longitud: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_longitud3">..</span>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Latitud: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_latitud3">..</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h4 class="header orange">Detalles</h4>
+                                        <div class="profile-user-info no-padding">
+                                            <div class="profile-user-info">
+                                                <div class="profile-info-row">
+                                                <div class="profile-info-name"> Clima: </div>
+
+                                                <div class="profile-info-value">                                        
+                                                    <span class="editable" id="select_clima3">Clima</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Estado de conservación: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_estado3">..</span>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Rutas de acceso: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_rutas3">..</span>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Actividades que se pueden realizar: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_actividades3">..</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Descripción: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_descripcion3">..</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Para quien: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_quien3">..</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Precio: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_precio3">..</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Contacto: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_contacto3">..</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Teléfono: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_telefono3">..</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Correo: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_correo3">..</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Sitio Web: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_web3">..</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Alojamiento: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_alojamiento3">..</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Alimentación: </div>
+
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_alimentacion3">..</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-info-row">
+                                                <div class="profile-info-name"> Atractivos cercanos: </div>
+                                                <div class="profile-info-value" >
+                                                    <span class="editable" id="lbl_atractivos_cercanos3">..</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <h3 class="row header smaller lighter orange">
+                                                <span class="col-sm-8">
+                                                    <i class="ace-icon fa fa-camera"></i>
+                                                    Fotografías
+                                                </span><!-- /.col -->
+                                            </h3>
+                                        <div id="obj_img1_atractivos"></div>
+                                    </div>
+                                   
+                                </div>                          
+                            </div>
+                            
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div>
+ 
+        <div id="modal-mapa" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div data-role="header" data-position-fixed="true" data-theme="b">
+                        <h1>Carchi Tur&iacute;stico</h1>
+
+                        <a href="index.html" class="close-modal ui-btn ui-icon-back ui-btn-icon-right ui-shadow ui-corner-all" data-dismiss="modal"> &nbsp; </a>
+
+                      </div>
+                        <div class="modal-content">
+                            <div class="modal-header no-padding">
+                                <div class="table-header">
+                                    Mapa
+                                </div>
+                            </div>
+                        <div class="modal-body padding">
+                        
+                            <div id="obj_mapa" style="width:400px;height:500px;">
+                      
+                            </div9
+                        </div>
+                        
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+        </div>
+        
+     </div>   
+    </body>
+
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</html>
+<style type="text/css">
+
+    #modal-ver-alojamiento .modal-dialog  {width:90%; }
+    #modal-ver-comidas .modal-dialog  {width:90%;}    
+    #modal-ver-atractivos .modal-dialog  {width:90%;}
+    #modal-alojamiento {overflow-y: scroll;}
+    #modal-comidas{overflow-y: scroll;}
+    #modal-atractivos{overflow-y: scroll;}
+    #modal-bolivar{overflow-y: scroll;}
+    #modal-espejo{overflow-y: scroll;}
+    #modal-mira{overflow-y: scroll;}
+    #modal-montufar{overflow-y: scroll;}
+    #modal-huaca{overflow-y: scroll;}
+    #modal-tulcan{overflow-y: scroll;}
+    #modal-ver-alojamiento{overflow-y: scroll;}
+    #modal-ver-comidas{overflow-y: scroll;}
+    #modal-ver-atractivos{overflow-y: scroll;}
+    #modal-mapa .modal-dialog  {width:430px;}
+    .scroll-bar{position:absolute;top:0;left:0;width:inherit;background-color:#ACE;background:#bbd4e5;}
+</style>
