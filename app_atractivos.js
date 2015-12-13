@@ -35,40 +35,40 @@ function mostrar_info(id){
     $.ajax({
         type: 'GET',
         url: 'http://turismo.coored.org/atractivos/app.php',
-        data: {field: 'value',datos_editar:'ok'},
+        data: {field: 'value',datos_editar:'ok', id:id},
         dataType: 'jsonp',
         crossDomain: true,
     }).done(function(response){
         console.log(response);
         var data=response[0];
         var a=0;
-         $('#modal-ver').modal('show');
-                        $('#select_cat1').text(data['0']);
-                        $('#select_tipo1').text(data[1]);
-                        $('#select_subtipo1').text(data[2]);
-                        $('#lbl_nombre1').text(data[3]);
-                        $('#lbl_propietario1').text(data[4]);
-                        $('#select_canton1').text(data[5]);
-                        $('#select_parroquia1').text(data[6]);
-                        $('#lbl_direccion1').text(data[7]);
-                        $('#lbl_latitud1').text(data[8]);
-                        $('#lbl_longitud1').text(data[9]);
-                        $('#select_clima1').text(data[10]);
-                        $('#lbl_telefono1').text(data[11]);
-                        $('#lbl_correo1').text(data[12]);
-                        $('#lbl_web1').text(data[13]);
-                        $('#lbl_descripcion1').text(data[14]);
-                        $('#lbl_foto1').text(data[18]);
-                        $('#lbl_actividades1').text(data[15]);
-                        $('#lbl_estado1').text(data[16]);
-                        $('#lbl_rutas1').text(data[17]);
-                        $('#lbl_poblado1').text(data[18]);
-                        $('#lbl_quien1').text(data[19]);
-                        $('#lbl_contacto1').text(data[20]);
-                        $('#lbl_alojamiento1').text(data[21]);
-                        $('#lbl_alimentacion1').text(data[22]);
-                        $('#lbl_atractivos_cercanos1').text(data[23]);
-                        $('#lbl_precio1').text(data[24]);
+        $('#modal-ver').modal('show');
+        $('#select_cat1').text(data['0']);
+        $('#select_tipo1').text(data[1]);
+        $('#select_subtipo1').text(data[2]);
+        $('#lbl_nombre1').text(data[3]);
+        $('#lbl_propietario1').text(data[4]);
+        $('#select_canton1').text(data[5]);
+        $('#select_parroquia1').text(data[6]);
+        $('#lbl_direccion1').text(data[7]);
+        $('#lbl_latitud1').text(data[8]);
+        $('#lbl_longitud1').text(data[9]);
+        $('#select_clima1').text(data[10]);
+        $('#lbl_telefono1').text(data[11]);
+        $('#lbl_correo1').text(data[12]);
+        $('#lbl_web1').text(data[13]);
+        $('#lbl_descripcion1').text(data[14]);
+        $('#lbl_foto1').text(data[18]);
+        $('#lbl_actividades1').text(data[15]);
+        $('#lbl_estado1').text(data[16]);
+        $('#lbl_rutas1').text(data[17]);
+        $('#lbl_poblado1').text(data[18]);
+        $('#lbl_quien1').text(data[19]);
+        $('#lbl_contacto1').text(data[20]);
+        $('#lbl_alojamiento1').text(data[21]);
+        $('#lbl_alimentacion1').text(data[22]);
+        $('#lbl_atractivos_cercanos1').text(data[23]);
+        $('#lbl_precio1').text(data[24]);
      
         // $('#obj_body').html(response)
     }).fail(function(error){
